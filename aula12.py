@@ -19,6 +19,7 @@ def retorna_dados_cep(cep):
     #print(dados_cep['bairro'])
     return response
 
+#Consumindo api rest full pokemon
 def retorna_dados_pokemon(pokemon):
     response = requests.get('https://pokeapi.co/api/v2/pokemon/{}/'.format(pokemon))
     dados_pokemon = response.json()
